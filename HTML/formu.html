@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>TwinTourist</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@200&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="../css/formu.css">
+        <script src="js/formu.js"></script>
+
+
+        <link rel="shortcut icon" href="../images/Logo Twintourist favicon.jpg">
+        
+        <script src="https://kit.fontawesome.com/cf1a0b0945.js" crossorigin="anonymous"></script>
+        
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">
+        </script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+        </script>
+
+
+    </head>
+
+    <body>
+        <div class="big-container">
+        
+            <header class="hea">
+                <table align="center">
+                    <tr>  
+                        <td align="right">&nbsp;&nbsp;<img src="../images/Logo Twintourist nuevo color.jpg" width="40px" height="35px" alt="TwinTourist"></td>
+                        <td align="left"><h1>&nbsp;&nbsp;TwinTourist</h1></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center"><div><p>choose a place and begin a new dream </p></div></td>
+                    </tr> 
+                </table>
+
+            </header>
+
+            <nav class="nvb">
+                <div><a href="index.html"><i class="fas fa-home"></i>&nbsp;Home</a></div>
+                <div><a href="formu.html"><i class="far fa-envelope"></i>&nbsp;Contact</a></div>
+                <div><a href="noyet.html"><i class="fas fa-briefcase" target="_blank"></i>&nbsp;Work With Us</a></div>
+                <div><a href="noyet.html"><i class="fas fa-sign-in-alt" target="_blank"></i>&nbsp;Login</a></div>
+            
+               
+            </nav>
+
+            <form  class="contact_form" action="#" id="formu" runat="server" onsubmit="return vali();" method="post">
+                <dl>
+                    <li>
+                        <h3><p align="center" >Can we help you?</p></h3>
+                        <h5><p align="center" >Please, fill all data</p></h5>
+                    </li>
+
+                    <li>
+                        <label for="name">Name:</label>
+                        <input type="text" id="nname" placeholder="your name. max 35 char"  /><br>
+                    </li>
+
+                    <li>
+                        <label for="lname">Last Name:</label>
+                        <input type="text" id="llname"  placeholder="your last name max 35 char"  /> <br>
+                    </li>
+                
+                    <li>
+                        <label for="email">Email:</label>
+                        <input type="email"  id="eemail" placeholder="your@email.com"  /><br>
+                    </li>
+                    <li>
+                        <label for="message">Message:</label>
+                        <textarea name="message"  id="mmessage" placeholder="message max 255 char" cols="35" rows="6" ></textarea><br>
+                    </li>
+                </dl>
+                
+                    <input class="btn btn-primary" type="submit" value="Submit">
+                    <input class="btn btn-outline-primary" type="reset" value="Reset">
+
+                          <!-- acciones para DB
+                         mensaje de gracias
+                          -->
+            </form>
+
+            <footer class="foo">
+                <h5>Copyright 1999-2021 All Rights Reserved Twintourist.&nbsp;<a href="noyet.html" target="_blank">Term & Conditions&nbsp;</a><br>
+                <a href="formu.html"><i class="far fa-envelope"></i>&nbsp;by Mail&nbsp;</a>
+                <a href="https://twitter.com/t2in2rs?s=11" target="_blank"><i class="fab fa-twitter"></i>&nbsp;Twitter&nbsp;</a>
+                <a href="https://instagram.com/twinturist?utm_medium=copy_link" target="_blank"><i class="fab fa-instagram"></i>&nbsp;Instagram&nbsp;</a>
+                </h5>
+            </footer>
+        </div>
+    </body>
+
+</html>
+
+<!-- agregar captcha -->

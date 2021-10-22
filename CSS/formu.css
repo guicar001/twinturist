@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+	padding: 0;
+	font-family: Courier, Garamond,'Azeret Mono', monospace, Arial, Helvetica, sans-serif;
+	max-width: 100%;
+}
+
+/* header */
+.hea { 
+	height: 100px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	
+	grid-area: hea1; 
+}
+
+
+/* navegation bar */
+.nvb {
+	height: 50px;
+	background-color: rgb(48, 48, 48);
+	color: white;
+	outline-style: solid;
+    outline-color: rgb(250, 35, 70);
+	outline-width: 1px;
+	
+	display: flex;
+    align-items: center;
+    justify-content: left;
+	
+	grid-area: nvb1; 
+}
+
+/* div de navegation bar */
+.nvb > div,
+.nvb > h5 {
+	padding: 10px;
+}
+
+/* formulario de contacto */
+.contact_form { 
+	outline-style: solid;
+    outline-color: rgb(100, 200, 220);
+	outline-width: 1px;
+	list-style-type: none;
+	margin: 0 auto; 
+	width:380px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-wrap: nowrap;
+
+	grid-area: ctc1;
+}
+
+.contact_form input {
+	width: 80%;
+	height: 30px;
+	margin: 1rem;
+	align-items: right;
+	/* font-family: Garamond; */
+	padding-bottom: 5px;
+}
+
+.contact_form button {
+	padding: 0.5em 1em;
+	border: none;
+	background: grey;
+	cursor: pointer;
+}
+
+
+
+/* footer */
+.foo { 
+	background-color: rgb(48, 48, 48);
+	height: auto;
+	padding: 1em;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	outline-style: solid;
+    outline-color: rgb(250, 35, 70);
+	outline-width: 1px;
+	text-align: center;
+
+	grid-area: foo1; 
+}
+
+/* big container */
+.big-container {
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas:
+    'hea1 hea1 hea1 hea1 hea1 hea1'
+    'nvb1 nvb1 nvb1 nvb1 nvb1 nvb1'
+    'ctc1 ctc1 ctc1 ctc1 ctc1 ctc1'
+	'foo1 foo1 foo1 foo1 foo1 foo1';   
+	/* todo igual jeje */
+  grid-gap: 5px;
+  background-color: #112255;
+  color: white;
+  padding: 10px;
+}
+
+
+/* div de big container */
+.big-container > div {
+  	text-align: center;
+ 	padding: 20px 0;
+	border-radius: 5px;
+
+}
+
+/* links */
+
+
+a:link{
+	color: white;
+	background-color: transparent;
+	text-decoration: none;
+}
+a:visited {
+	color: white;
+	background-color: transparent;
+	text-decoration: none;
+}
+a:hover {
+	color: rgb(250, 35, 70);
+	background-color: transparent;
+	text-decoration: underline;
+}
+a:active {
+	color: violet;
+	background-color: transparent;
+	text-decoration: underline;
+}
+
